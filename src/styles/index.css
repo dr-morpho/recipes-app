@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+@import 'normalize';
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Edu VIC WA NT Beginner';
+}
+
+:root {
+  --light: #ffff;
+  --dark: #000000c8;
+}
+
+body[theme='light'] {
+  --light: #ffff;
+  --dark: #000000c8;
+}
+
+body[theme='dark'] {
+  --light: #000000c8;
+  --dark: #ffff;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--dark);
+  transition: 0.2s;
+}
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 100vw;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+h4 {
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--dark);
+  line-height: 2.5rem;
+}
+
+a {
+  color: var(--dark);
+}
